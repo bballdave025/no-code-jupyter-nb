@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "no-code-jupyter-nb"
+version = "0.1.0"
+description = "No-code and low-code Jupyter notebook widgets and workflow helpers."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+
+classifiers = [
+  "License :: OSI Approved :: Apache Software License",
+]
+
+authors = [
+  {name = "Dave Black"}
+]
+
+dependencies = [
+  "ipywidgets>=8",
+  "pandas>=2"
+]
+
+keywords = [
+  "jupyter",
+  "ipywidgets",
+  "notebook",
+  "widgets",
+  "productivity"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
