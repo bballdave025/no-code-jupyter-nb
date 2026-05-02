@@ -7,7 +7,7 @@ C++ Jupyter Config Class
 ALSO INVOLVING
 (no other subjects specified)
 
-FROM USER thebballdave025@gmail.com
+FROM USER @bballdave025 (GitHub)
 
 ---
 
