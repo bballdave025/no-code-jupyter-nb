@@ -58,9 +58,7 @@ CONTINUED FROM CHAT ENTITLED:
 ALSO INVOLVING
 `([**INSERT-OTHER-CHAT-SUBJECTS**]|no other subjects specified)`
 
-FROM USER 
-  (ChatGPT) thebballdave025@gmail.com
-  (GitHub) @bballdave025
+FROM USER @bballdave025 (GitHub)
 ```
 
 ---
