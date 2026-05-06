@@ -32,10 +32,20 @@ No full functionality yet — this is a foundation pass.
 - [ ] `json_tools.py` (load/write/add/remove placeholders)
 
 ### Behavior (initial)
-- [ ] `DEFAULT_OBSERVABLES = GlobalObservables.detect()`
-- [ ] `NotebookConfig(observables=...)` wired
-- [ ] Package imports working:
+- [ ] Define `DEFAULT_OBSERVABLES = GlobalObservables.detect()`
+- [ ] Wire `NotebookConfig(observables=..Package
+- [ ] Ensure package imports working:
 
 ```python
-from no_code_jupyter_nb import (...)
+from no_code_jupyter_nb import (
+```
+  - [ ] `GlobalObservables,`
+  - [ ] `NotebookConfig,`
+  - [ ] CodeGenStylenderStyledeGenStylenderStyletegorySpec,
+  - [ ] `CategorySpec`
+  - [ ] `RenderStyle`
+  - [ ] `CodeGenStyle` CodCodeGenStyle
+
+```python
+)
 ```
