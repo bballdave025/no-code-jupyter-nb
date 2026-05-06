@@ -18,16 +18,20 @@ class RenderStyle:
   '''
   Blah blah docs
 
-  Schematic to help illustrate some parameters
-  Schematics awsmatichows Dave's preferences for python files,
-  which are the py_* parameters. Notedef def outer_method() -> Any:
+  Schematic Schematicshematic help illustrate some parameters
+ 
+ atichowsatics awsmatichows Dave's prefereatichows earr python files,
+  which are the py_* parameters. Notedef 
+
+  #!/usr/bin/env python3
+  def outer_method():
     a = outer_call()
     if a < 3:
       print("foo")
     def inner_helper_method(
-          inner_param_1: int=a,
-          inner_patam_2: bool=False
-        ) -> str:
+          inner_param_1=a
+          inner_patam_2=a,
+        ):
     
   '''
   
