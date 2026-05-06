@@ -42,13 +42,13 @@ from no_code_jupyter_nb import (
   NotebookConfig,
   CategorySpec,
   RenderStyle,
-  CodeGenStyle
+  CodeGenStyle,
 )
 ```
 
-- The checks one at a time:
-  - [ ] `python -c "from no_code_juputer_nb import GlobalObservables"` returns `0`
-  - [ ] `python -c "from no_code_juputer_nb import NotebookConfig` returns `0`
-  - [ ] `python -c "from no_code_juputer_nb import CategorySpec"` returns `0`
-  - [ ] `python -c "from no_code_juputer_nb import RenderStyle"` returns `0`
-  - [ ] `python -c "from no_code_juputer_nb import CodeGenStyle"` returns `0`
+- The import checks one at a time:
+  - [ ] `python -c "from no_code_jupyter_nb import GlobalObservables"` returns `0`
+  - [ ] `python -c "from no_code_jupyter_nb import NotebookConfig"` returns `0`
+  - [ ] `python -c "from no_code_jupyter_nb import CategorySpec"` returns `0`
+  - [ ] `python -c "from no_code_jupyter_nb import RenderStyle"` returns `0`
+  - [ ] `python -c "from no_code_jupyter_nb import CodeGenStyle"` returns `0`
