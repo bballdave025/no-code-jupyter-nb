@@ -46,8 +46,9 @@ from no_code_jupyter_nb import (
 )
 ```
 
+- The checks one at a time:
   - [ ] `python -c "from no_code_juputer_nb import GlobalObservables"` returns `0`
-  - [ ] `python -c "from no_code_juputer_nb import NotebookConfig`
-  - [ ] `python -c "from no_code_juputer_nb import CategorySpec"` returns `0
-  - [ ] `python -c "from no_code_juputer_nb import RenderStyle"`
-  - [ ] `python -c "from no_code_juputer_nb import CodeGenStyle"`
+  - [ ] `python -c "from no_code_juputer_nb import NotebookConfig` returns `0`
+  - [ ] `python -c "from no_code_juputer_nb import CategorySpec"` returns `0`
+  - [ ] `python -c "from no_code_juputer_nb import RenderStyle"` returns `0`
+  - [ ] `python -c "from no_code_juputer_nb import CodeGenStyle"` returns `0`
