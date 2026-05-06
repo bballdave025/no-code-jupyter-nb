@@ -46,7 +46,7 @@ from no_code_jupyter_nb import (
 )
 ```
 
-- The import checks one at a time:
+- The import checks, one at a time:
   - [ ] `python -c "from no_code_jupyter_nb import GlobalObservables"` returns `0`
   - [ ] `python -c "from no_code_jupyter_nb import NotebookConfig"` returns `0`
   - [ ] `python -c "from no_code_jupyter_nb import CategorySpec"` returns `0`
