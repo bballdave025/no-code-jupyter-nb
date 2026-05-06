@@ -1,4 +1,4 @@
-# TlBootstrap package structure + observables + config skeleton
+# PR1: Bootstrap package structure + observables + config skeleton
 
 Relevant branch: `bballdave025/no-code-jupyter-nb:feature/bootstrap-package-structure`
 
@@ -39,7 +39,3 @@ No full functionality yet — this is a foundation pass.
 ```python
 from no_code_jupyter_nb import (...)
 ```
-
-
-
-
