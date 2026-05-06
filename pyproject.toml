@@ -8,14 +8,14 @@ version = "0.1.0"
 description = "No-code and low-code Jupyter notebook widgets and workflow helpers."
 readme = "README.md"
 requires-python = ">=3.10"
-license = "Apache-2.0"
+license = { text = "Apache-2.0" }
 
 classifiers = [
   "License :: OSI Approved :: Apache Software License",
 ]
 
 authors = [
-  {name = "Dave Black"}
+  { name = "Dave Black" }
 ]
 
 dependencies = [
@@ -31,5 +31,35 @@ keywords = [
   "productivity"
 ]
 
+[project.optional-dependencies]
+dev = [
+  "build",
+  "bump-my-version",
+  "pytest",
+]
+notebook = [
+  "ipykernel"
+]
+
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.bumpversion]
+current_version = "0.2.0"
+parse = '(?P<major>\d+)\.(?P<minor>\d+)\.(?P<patch>\d+)'
+serialize = [
+  "{major}.{minor}.{patch}"
+]
+commit = true
+tag = true
+allow_dirty = false
+
+[[tool.bumpversion.files]]
+filename = "pyproject.toml"
+search = 'version = "{current_version}"'
+replace = 'version = "{new_version}"'
+
+[[tool.bumpversion.files]]
+filename = "src/no_code_jupyter_nb/__init__.py"
+search = '__version__ = "{current_version}"'
+replace = '__version__ = "{new_version}"'
