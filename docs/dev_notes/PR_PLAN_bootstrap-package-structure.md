@@ -39,12 +39,12 @@ No full functionality yet — this is a foundation pass.
 ```python
 from no_code_jupyter_nb import (
 ```
-  - [ ] `GlobalObservables,`
-  - [ ] `NotebookConfig,`
-  - [ ] CodeGenStylenderStyledeGenStylenderStyletegorySpec,
-  - [ ] `CategorySpec`
-  - [ ] `RenderStyle`
-  - [ ] `CodeGenStyle` CodCodeGenStyle
+
+  - [ ] `GlobalObservables` `,`
+  - [ ] `NotebookConfig` `,`
+  - [ ] `CategorySpec` `,`
+  - [ ] `RenderStyle` `,`
+  - [ ] `CodeGenStyle` `,`
 
 ```python
 )
