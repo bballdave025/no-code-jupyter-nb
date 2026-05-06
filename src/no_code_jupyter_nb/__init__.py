@@ -7,8 +7,8 @@ from .environment import (
   GlobalObservables,
   RuntimeEnvironment,
 )
-from .render_style import RenderStyle
-from .codegen_style import CodeGenStyle
+from .format_style import RenderStyle
+from .format_style import CodeGenStyle
 
 __all__ = [
   "__version__",
