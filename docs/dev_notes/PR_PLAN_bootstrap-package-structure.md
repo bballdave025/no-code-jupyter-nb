@@ -38,7 +38,9 @@ No full functionality yet — this is a foundation pass.
 - [ ] `NotebookConfig(observables=...)` wired
 - [ ] Package imports working:
 
-```python from no_code_jupyter_nb import (...)` ``` `kage-structure`
+```python
+from no_code_jupyter_nb import (...)
+```
 
 
 
