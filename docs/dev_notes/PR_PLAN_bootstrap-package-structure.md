@@ -33,19 +33,21 @@ No full functionality yet — this is a foundation pass.
 
 ### Behavior (initial)
 - [ ] Define `DEFAULT_OBSERVABLES = GlobalObservables.detect()`
-- [ ] Wire `NotebookConfig(observables=..Package
+- [ ] Wire `NotebookConfig(observables=...)`
 - [ ] Ensure package imports working:
 
 ```python
 from no_code_jupyter_nb import (
-```
-
-  - [ ] `GlobalObservables` `,`
-  - [ ] `NotebookConfig` `,`
-  - [ ] `CategorySpec` `,`
-  - [ ] `RenderStyle` `,`
-  - [ ] `CodeGenStyle` `,`
-
-```python
+  GlobalObservables,
+  NotebookConfig,
+  CategorySpec,
+  RenderStyle,
+  CodeGenStyle
 )
 ```
+
+  - [ ] `python -c "from no_code_juputer_nb import GlobalObservables"` returns `0`
+  - [ ] `python -c "from no_code_juputer_nb import NotebookConfig`
+  - [ ] `python -c "from no_code_juputer_nb import CategorySpec"` returns `0
+  - [ ] `python -c "from no_code_juputer_nb import RenderStyle"`
+  - [ ] `python -c "from no_code_juputer_nb import CodeGenStyle"`
