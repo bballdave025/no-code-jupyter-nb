@@ -1,7 +1,7 @@
 __version__ = "0.2.0"
 
 from .categories import CategorySpec
-from .config import NotebookConfig
+from .nb_config import NotebookConfig
 from .environment import (
   DEFAULT_OBSERVABLES,
   GlobalObservables,
