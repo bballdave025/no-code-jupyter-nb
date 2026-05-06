@@ -1,6 +1,4 @@
-# Title and Branch 
-
-Connected PR Title: **Bootstrap package structure + observables + config skeleton**
+# TlBootstrap package structure + observables + config skeleton
 
 Relevant branch: `bballdave025/no-code-jupyter-nb:feature/bootstrap-package-structure`
 
