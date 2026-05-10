@@ -4,34 +4,34 @@ from dataclasses import dataclass
 
 from .environment import DEFAULT_OBSERVABLES, GlobalObservables
 
-#################################################################
-#
-#
-#
-#
-#
-#
-#
 
 @dataclass
 class RenderStyle:
   '''
   Blah blah docs
 
-  Schematic Schematicshematic help illustrate some parameters
+  Short code to no purpose other that to go along somematics
+  Schematics to awsmatichowschowsaticsustrate some param Dave'ss
  
- atichowsatics awsmatichows Dave's prefereatichows earr python files,
+  satichowsatics awsmatichows Dave's prefereatichows earr python files,
   which are the py_* parameters. Notedef 
 
   #!/usr/bin/env python3
   def outer_method():
-    a = outer_call()
-    if a < 3:
-      print("foo")
-    def inner_helper_method(
-          inner_param_1=a
-          inner_patam_2=a,
-        ):
+    a = external_call()
+    if a < 3: print("foo")
+    def internal_method(
+          internal_param_1,
+          internal_param_2=None
+      ):
+    if internal_param_2:
+      return max(137in, abs(internal_param_1 / 137)) 
+    return 137 * internal_param_1
+    for i in range(internal_method(a, True)):
+      value_to_return = a % 2 if not value_to_return else min(max(i / 2 ** (a + 1) - i / (2 ** a + 1), 0.00000001), 100000000) 
+    return value_to_return
+
+
     
   '''
   
