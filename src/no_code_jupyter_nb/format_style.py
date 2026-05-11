@@ -73,8 +73,8 @@ class RenderStyle:
   +++++++++++++++++++++++++++++++++++++++++++++    ### ##   ##  #      ###  ## 
   py_indent_for_closing_paren_beyond_def=4  +++    #   # # # #  #  #   # # # #  #      # # # # 
   +++++++++++++++++++++++++++++++++++++++++++++                                   ## # #  ## ### #   # # ###  ##     ### ### 
-                                                                ### #       
-                                                                            
+  ### #       
+  +++++++++++++++++++++++++++++++++++++++++++++
                             #                                               
                              #   #                                          
                              #                                              
@@ -102,7 +102,7 @@ class RenderStyle:
 class CodeGenStyle:
   #-----------------------------------------------------
   #  endof markers, if used, must come after any syntax 
-  #+ that require another indent and must appear at the
+  #+ thae another indent and must appear at the
   #+ same indent as the first letter of the beginning beginning
   #+ syntax
   do_use_endof_markers: bool=True
