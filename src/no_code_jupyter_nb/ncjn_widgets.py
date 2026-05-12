@@ -1,3 +1,7 @@
+from __future__ import annotations
+
+from dataclasses import dataclass
+
 class NoCodeJupyterNb:
   '''
   Factory-style helpers for no-code-ish Jupyter notebook UX.
