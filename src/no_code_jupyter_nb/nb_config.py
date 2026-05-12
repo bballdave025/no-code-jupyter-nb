@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass, field
-from pathlib import Path
+import pathlib
 
 from .categories import CategorySpec
 from .environment import DEFAULT_OBSERVABLES, GlobalObservables
