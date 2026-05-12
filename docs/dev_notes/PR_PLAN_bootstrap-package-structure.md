@@ -2,6 +2,12 @@
 
 Relevant branch: `bballdave025/no-code-jupyter-nb:feature/bootstrap-package-structure`
 
+## Implementation note (2026-05-12):
+
+Where implementation details changed during bootstrap work:
+- original plans are shown with strike-through
+- implemented replacements/consolidations are shown in italics
+
 ## Summary
 
 Initial bootstrap of `no_code_jupyter_nb` as an importable package.
@@ -31,10 +37,10 @@ No full functionality yet — this is a foundation pass.
 
 ### Core structure
 - [x] `environment.py` with `GlobalObservables` + `.detect()`
-- [x] `config.py` with `NotebookConfig` *changed filename to `nb_config.py`*
+- [x] ~~`config.py`~~  `nb_config.py` with `NotebookConfig` *changed module filename to `nb_config.py`*
 - [x] `categories.py` with `CategorySpec`
-- [x] `render_style.py` (`RenderStyle`) *combined into `format_style.py`*
-- [x] `codegen_style.py` (`CodeGenStyle`) *combined into `format_style.py`*
+- [x] ~~`render_style.py` (`RenderStyle`)~~ *`RenderStyle` combined with `CodeGenStyle` into `format_style.py`*
+- [x] ~~`codegen_style.py` (`CodeGenStyle`)~~ *`CodeGenStyle` combined with `RenderStyle` into `format_style.py`*
 - [x] `json_tools.py` (load/write/add/remove placeholders)
 
 ### Behavior (initial)
