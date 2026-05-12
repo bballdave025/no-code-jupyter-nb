@@ -1,3 +1,5 @@
+import pathlib
+
 def load_config_from_json(
     config_path: pathlib.Path | str,
 ) -> NotebookConfig:
