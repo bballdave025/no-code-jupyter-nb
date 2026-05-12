@@ -24,16 +24,16 @@ No full functionality yet — this is a foundation pass.
 - [x] Configured `bump-my-version`
 
 ### Core structure
-- [ ] `environment.py` with `GlobalObservables` + `.detect()`
-- [ ] `config.py` with `NotebookConfig`
-- [ ] `categories.py` with `CategorySpec`
-- [ ] `render_style.py` (`RenderStyle`)
-- [ ] `codegen_style.py` (`CodeGenStyle`)
-- [ ] `json_tools.py` (load/write/add/remove placeholders)
+- [x] `environment.py` with `GlobalObservables` + `.detect()`
+- [x] `config.py` with `NotebookConfig` *changed filename to `nb_config.py`*
+- [x] `categories.py` with `CategorySpec`
+- [x] `render_style.py` (`RenderStyle`) *combined into `format_style.py`*
+- [x] `codegen_style.py` (`CodeGenStyle`) *combined into `format_style.py`*
+- [x] `json_tools.py` (load/write/add/remove placeholders)
 
 ### Behavior (initial)
-- [ ] Define `DEFAULT_OBSERVABLES = GlobalObservables.detect()`
-- [ ] Wire `NotebookConfig(observables=...)`
+- [x] Define `DEFAULT_OBSERVABLES = GlobalObservables.detect()`
+- [x] Wire `NotebookConfig(observables=...)`
 - [ ] Ensure package imports working:
 
 ```python
