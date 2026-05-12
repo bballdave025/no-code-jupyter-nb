@@ -1,3 +1,7 @@
+import pathlib
+
+from typing import Literal
+
 @dataclass
 class FileSelectionResult:
   selected_path: pathlib.Path | None
