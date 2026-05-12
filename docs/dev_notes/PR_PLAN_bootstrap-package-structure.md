@@ -23,6 +23,13 @@ No full functionality yet — this is a foundation pass.
 - [x] Added/updated `pyproject.toml`
 - [x] Configured `bump-my-version`
 
+<em>
+### Implementation note:
+- `NotebookConfig` is exported from `nb_config.py`
+- `RenderStyle` and `CodeGenStyle` are exported from `format_style.py`
+- Public imports should still work from package root: `no_code_jupyter_nb`
+</em>
+
 ### Core structure
 - [x] `environment.py` with `GlobalObservables` + `.detect()`
 - [x] `config.py` with `NotebookConfig` *changed filename to `nb_config.py`*
