@@ -1,3 +1,5 @@
+from typing import Literal
+
 InstructionLevel = Literal[
   "normal",
   "just_shift_enter",
