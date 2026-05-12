@@ -1,3 +1,5 @@
+import pathlib
+
 class NotebookRenderer:
 
   @staticmethod
