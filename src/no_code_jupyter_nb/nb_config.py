@@ -18,14 +18,23 @@ class NotebookConfig:
   observables: GlobalObservables = field(
     default_factory=lambda: DEFAULT_OBSERVABLES
   )
-  maintainer_name: str = "Dave Black"
-  maintainer_email: str = "user@domain.com"
+
+  original_no_code_maintainer: str = ""
+  original_no_code_email: str = ""
+
+  current_maintainer_name: str = "Dave Black"
+  current_maintainer_email: str = "user@domain.com"
+
   category_specs: list[CategorySpec] = field(default_factory=list)
+
   current_category_key: str | None = None
   current_subcategory_key: str | None = None
-  selected_file: Path | None = None
+
+  selected_file: pathlib.Path | None = None
   current_uri: str | None = None
-  root_directory: Path | None = None
+
+  root_directory: pathlib.Path | None = None
+
   runtime_options: dict[str, object] = field(default_factory=dict)
 
   def get_category_map(self) -> dict[str, CategorySpec]:
