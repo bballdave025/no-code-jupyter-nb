@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from pathlib import Path
+import pathlib
 import locale as locale_module
 import os
 import platform
@@ -14,25 +14,30 @@ class RuntimeEnvironment:
   os_name: str
   machine_endianness: str
   locale_name: str
-  machine_word_size: int
+  #machine_word_size: int
+  machine_description: str
   python_bitness: int
   python_version: tuple[int, int, int]
   is_windows: bool
   is_linux: bool
   is_macos: bool
-  home_dir: Path
+  home_dir: pathlib.Path
   downloads_dir: Path
 
   @classmethod
   def detect(cls) -> "RuntimeEnvironment":
     os_name = platform.system()
-    home_dir = Path.home()
+    home_dir = pathlib.Path.home()
 
     return cls(
       os_name=os_name,
       machine_endianness=sys.byteorder,
       locale_name=locale_module.getlocale()[0] or "",
-      machine_word_size=struct.calcsize("P") * 8,
+      #machine_word_size=struct.calcsize("P") * 8,
+      machine_description=(
+        f"{platform.machine()} / "
+        f"{platform.processor() or 'unknown-cpu'}"
+      ),
       python_bitness=struct.calcsize("P") * 8,
       python_version=sys.version_info[:3],
       is_windows=(os_name == "Windows"),
@@ -105,12 +110,12 @@ class GlobalObservables:
   ##endof: os_name(self)
 
   @property
-  def home_dir(self) -> Path:
+  def home_dir(self) -> pathlib.Path:
     return self.runtime.home_dir
   ##endof: home_dir(self)
 
   @property
-  def downloads_dir(self) -> Path:
+  def downloads_dir(self) -> pathlib.Path:
     return self.runtime.downloads_dir
   ##endof: downloads_dir(self)
 ##endof: class GlobalObservables
