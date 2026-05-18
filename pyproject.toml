@@ -18,11 +18,6 @@ authors = [
   { name = "Dave Black" }
 ]
 
-dependencies = [
-  "ipywidgets>=8",
-  "pandas>=2"
-]
-
 keywords = [
   "jupyter",
   "ipywidgets",
@@ -31,14 +26,38 @@ keywords = [
   "productivity"
 ]
 
+dependencies = []
+
 [project.optional-dependencies]
 dev = [
   "build",
-  "bump-my-version",
   "pytest",
 ]
+
+release = [
+  "bump-my-version",
+]
+
 notebook = [
-  "ipykernel"
+  "ipykernel",
+  "ipywidgets>=8",
+  #  @TODO (bballdave025 or future maintainer):
+  #+  pandas 3.x currently causes build/dependency pain on Termux/mobile 
+  #+ and likely plenty of other places. 2025-05-14
+  #+ Revisit after ecosystem stabilization and CI coverage.
+  "pandas>=2,<3",
+  "numpy>=2,<3",
+]
+
+test = [
+  "pytest",
+  "ipywidgets>=8",
+  #  @TODO (bballdave025 or future maintainer):
+  #+  pandas 3.x currently causes build/dependency pain on Termux/mobile 
+  #+ and likely plenty of other places. 2025-05-14
+  #+ Revisit after ecosystem stabilization and CI coverage.
+  "pandas>=2,<3",
+  "numpy>=2,<3"
 ]
 
 [tool.setuptools.packages.find]
