@@ -35,6 +35,10 @@ dev = [
   "bump-my-version",
 ]
 
+validation = [
+  "jsonschema>=4,<5",
+]
+
 release = [
   "bump-my-version",
 ]
