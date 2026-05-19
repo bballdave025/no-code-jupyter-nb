@@ -67,12 +67,21 @@ from no_code_jupyter_nb import (
 
 Terminal input/output for tests and some package structure visualization:
 
-```python
+```bash
 ~/my_repos_dwb/no-code-jupyter-nb $ cd
 ~ $ date +'%s_%Y-%m-%dT%H%M%S%z'
 1779146125_2026-05-18T191525-0400
 ~ $ pwd
 /data/data/com.termux/files/home
+~ $ for lett in s n r v m p i o; do uname -$lett; done
+Linux
+localhost
+6.6.102-android15-8-g6eb5b2a8c46b-ab14739656-4k
+#1 SMP PREEMPT Mon Jan 19 02:06:09 UTC 2026
+aarch64
+unknown
+unknown
+Android
 ~ $ python -c "from no_code_jupyter_nb import CodeGenStyle"
 ~ $ echo $?
 0
