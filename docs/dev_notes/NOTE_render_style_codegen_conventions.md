@@ -91,7 +91,7 @@ Github in Spring 2026
 '''
 ```
 
-Note the members of the `RenderCode @dataclass`, which here show the defaults
+The members of the `RenderCode @dataclass`, which here show the defaults
 
 ```python
   py_indent: int=2
@@ -104,24 +104,32 @@ Note the members of the `RenderCode @dataclass`, which here show the defaults
   preferred_line_length: int=72
 ```
 
-                @dataclass
-                class CodeGenStyle:
-                  #-----------------------------------------------------
-                    #  endof markers, if used, must come after any syntax 
-                      #+ thae another indent and must appear at the
-                        #+ same indent as the first letter of the beginning beginning
-                          #+ syntax
-                            do_use_endof_markers: bool=True
-                              do_require_predeclaration: bool=True
-                                docstring_choice: str = "three_singles"
-                                ##endof:  class CodGenStyle
+
+`# @TODO : ` Use the original code snippet to illustrate
+- `max_line_length`
+- `preferred_line_length`
+
+The same ideas apply for the `ipynb_*` parameters as did for the `py_*` ones.
 
 
+## Not as crazy docstring for `CodeGenStyle`
+
+```python
+  #-----------------------------------------------------
+  #  endof markers, if used, must come after any syntax 
+  #+ thae another indent and must appear at the
+  #+ same indent as the first letter of the beginning beginning
+  #+ syntax
+```
 
 
-# @TODO
+The members of the `CodeGenStyle @dataclass`, which h
+ere show the defaults
 
+```python
+  do_use_endof_markers: bool=True
+  do_require_predeclaration: bool=True
+  docstring_choice: str = "three_singles"
+```
 
-## Not as crazy docstring for `whatev`
-
-
+`# @TODO : ` Use the original code snippet to illustrate the three parameteters above.
