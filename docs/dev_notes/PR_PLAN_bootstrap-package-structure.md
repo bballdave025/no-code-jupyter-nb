@@ -65,7 +65,9 @@ from no_code_jupyter_nb import (
   - [x] `python -c "from no_code_jupyter_nb import RenderStyle"` returns `0`
   - [x] `python -c "from no_code_jupyter_nb import CodeGenStyle"` returns `0`
 
-### *The remainder is all italicized, because it represents the tests, obviously after the plan*
+### *The Remainder (other than code) is all italicized*
+
+*This is because the remainder represents the tests, and these obviously came after the plan.*
 
 *Terminal input/output for tests and some package structure visualization:*
 
