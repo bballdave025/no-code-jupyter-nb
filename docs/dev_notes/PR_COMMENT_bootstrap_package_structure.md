@@ -3,22 +3,22 @@ Bootstrap/package-structure pass is now validated on Android Termux (Pixel 10, P
 Highlights:
 
 - editable install succeeds via:
-  "python -m pip install -e ."
-  - SSH-authenticated GitHub clone validated
-  - package root exports validated
-  - "GlobalObservables.detect()" exercised successfully on Android/Termux runtime
-  - import smoke tests pass for:
-  - "GlobalObservables"
-  - "NotebookConfig"
-  - "CategorySpec"
-  - "RenderStyle"
-  - "CodeGenStyle"
+  `python -m pip install -e .`
+- SSH-authenticated GitHub clone validated
+- package root exports validated
+- "GlobalObservables.detect()" exercised successfully on Android/Termux runtime
+- import smoke tests pass for:
+  - `GlobalObservables`
+  - `NotebookConfig`
+  - `CategorySpec`
+  - `RenderStyle`
+  - `CodeGenStyle`
 
 During smoke testing, a real packaging/import issue was discovered and fixed:
 
     from dataclasses import dataclass, field
 
-was required in "notebook_blocks.py".
+was required in `notebook_blocks.py`.
 
 Heavyweight notebook/release dependencies are intentionally deferred from the lightweight bootstrap validation path for now.
 
