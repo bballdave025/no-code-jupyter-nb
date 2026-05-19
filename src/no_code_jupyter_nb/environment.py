@@ -22,7 +22,7 @@ class RuntimeEnvironment:
   is_linux: bool
   is_macos: bool
   home_dir: pathlib.Path
-  downloads_dir: Path
+  downloads_dir: pathlib.Path
 
   @classmethod
   def detect(cls) -> "RuntimeEnvironment":

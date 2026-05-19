@@ -1,4 +1,8 @@
+import json
 import pathlib
+
+from no_code_jupyter_notenook import NotebookConfig
+from no_code_jupyter_notebook import CategorySpec
 
 def load_config_from_json(
     config_path: pathlib.Path | str,
