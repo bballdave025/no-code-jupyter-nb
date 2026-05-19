@@ -65,7 +65,9 @@ from no_code_jupyter_nb import (
   - [x] `python -c "from no_code_jupyter_nb import RenderStyle"` returns `0`
   - [x] `python -c "from no_code_jupyter_nb import CodeGenStyle"` returns `0`
 
-Terminal input/output for tests and some package structure visualization:
+### *The remainder is all italicized, because it represents the tests, obviously after the plan*
+
+*Terminal input/output for tests and some package structure visualization:*
 
 ```bash
 ~/my_repos_dwb/no-code-jupyter-nb $ cd
@@ -134,7 +136,7 @@ src/no_code_jupyter_nb
   ~/my_repos_dwb/no-code-jupyter-nb $
 ```
 
-And, for one good, useful implementation check, where I have formatted the output:
+*And, for one good, useful implementation check, where I have formatted the output:*
 
 ```bash
 ~/my_repos_dwb/no-code-jupyter-nb $ cd
@@ -166,6 +168,8 @@ GlobalObservables(
   have_js_clipboard_access=False, 
   have_pandas_clipboard_access=False
 )
-~ $ date +'%s_%Y-%m-%dT%H%M%S%z'                        1779146652_2026-05-18T192412-0400                       ~ $
+~ $ date +'%s_%Y-%m-%dT%H%M%S%z'
+1779146652_2026-05-18T192412-0400
+~ $
 ```
 
