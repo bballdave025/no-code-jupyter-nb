@@ -13,6 +13,14 @@ from .format_style import (
 from .nb_config import NotebookConfig
 from .notebook_blocks import NotebookBlock
 
+from .json_tools import (
+  load_config_from_json, 
+  load_json_file,
+)
+
+# thinking about namespaces
+from . import json_tools
+
 __all__ = [
   "__version__",
   "RuntimeEnvironment",
@@ -23,4 +31,7 @@ __all__ = [
   "CodeGenStyle",
   "NotebookConfig",
   "NotebookBlock",
+  "json_tools",
+  "load_config_from_json",
+  "load_json_file",
 ]
