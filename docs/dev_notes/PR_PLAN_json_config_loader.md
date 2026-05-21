@@ -90,9 +90,12 @@ framework archaeology.
 
 ## Checklist
 
+Items in _italics_ are those not included in the original checklist, often the implementation of one part of the config or category loading.
+
 ### Packaging / structure
 
 - [ ] Create/update `load_config_from_json(...)`
+  - [x] _minimal JSON_
 - [ ] Ensure imports remain lightweight
 - [ ] Avoid introducing hard runtime dependencies
 - [ ] Export loader helpers if appropriate
@@ -100,8 +103,11 @@ framework archaeology.
 ### Core implementation
 
 - [ ] Load JSON from file
+  - [x] _minimal JSON_
 - [ ] Parse category records
+  - [x] _minimal JSON_
 - [ ] Hydrate `CategorySpec`
+  - [x] _minimal JSON_
 - [ ] Hydrate `NotebookConfig`
 - [ ] Support default category selection
 - [ ] Support optional/missing fields safely
@@ -109,12 +115,13 @@ framework archaeology.
 
 ### Validation / smoke tests
 
-- [ ] Minimal valid JSON config loads successfully
-- [ ] `CategorySpec` list hydrates correctly
+- [x] Minimal valid JSON config loads successfully
+- [x] `CategorySpec` list hydrates correctly
 - [ ] `NotebookConfig.current_category_key` works
-- [ ] `config.get_current_category()` works
-- [ ] `config.get_current_uri()` works
+- [x] `config.get_current_category()` works
+- [x] `config.get_current_uri()` works
 - [ ] Import checks still succeed
+  - [x] _minimal JSON_
 
 ### UX / notebook behavior
 
