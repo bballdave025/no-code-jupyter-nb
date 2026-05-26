@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "no-code-jupyter-nb"
-version = "0.1.0"
+version = "0.2.0"
 description = "No-code and low-code Jupyter notebook widgets and workflow helpers."
 readme = "README.md"
 requires-python = ">=3.10"
@@ -33,6 +33,10 @@ dev = [
   "build",
   "pytest",
   "bump-my-version",
+]
+
+validation = [
+  "jsonschema>=4,<5",
 ]
 
 release = [

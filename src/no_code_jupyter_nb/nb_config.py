@@ -9,18 +9,18 @@ from .environment import DEFAULT_OBSERVABLES, GlobalObservables
 
 @dataclass
 class NotebookConfig:
-  """
+  '''
   Notebook/session/project choices.
 
   Does not recompute environment information.
-  """
+  '''
 
   observables: GlobalObservables = field(
     default_factory=lambda: DEFAULT_OBSERVABLES
   )
 
-  original_no_code_maintainer: str = ""
-  original_no_code_email: str = ""
+  original_no_code_maintainer: str = "Dave Black"
+  original_no_code_email: str = "user@domain.com"
 
   current_maintainer_name: str = "Dave Black"
   current_maintainer_email: str = "user@domain.com"
@@ -50,4 +50,49 @@ class NotebookConfig:
 
     return category_map.get(self.current_category_key)
   ##endof: get_current_category(self)
+
+  def get_current_uri(self) -> str | None:
+    current_category = self.get_current_category()
+
+    if current_category is None:
+      return self.current_uri
+    ##endof: if current_category is None
+
+    return current_category.uri or self.current_uri
+  ##endof: get_current_uri(self)
+
+  @classmethod
+  def from_dict(
+        cls,
+        raw: dict[str, object],
+        category_specs: list[CategorySpec],
+      ) -> "NotebookConfig":
+    root_directory = raw.get("root_directory")
+
+    return cls(
+      original_no_code_maintainer=str(
+        raw.get("original_no_code_maintainer", "")
+      ),
+      original_no_code_email=str(
+        raw.get("original_no_code_email", "")
+      ),
+      current_maintainer_name=str(
+        raw.get("current_maintainer_name", "Dave Black")
+      ),
+      current_maintainer_email=str(
+        raw.get("current_maintainer_email", "user@domain.com")
+      ),
+      category_specs=category_specs,
+      current_category_key=raw.get("current_category_key"),
+      current_subcategory_key=raw.get("current_subcategory_key"),
+      current_uri=raw.get("current_uri"),
+      root_directory=(
+        pathlib.Path(str(root_directory))
+        if root_directory is not None
+        else None
+      ),
+      runtime_options=dict(raw.get("runtime_options", {})),
+    )
+  ##endof: from_dict(...)
+
 ##endof: class NotebookConfig

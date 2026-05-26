@@ -21,14 +21,14 @@ class CategorySpec:
         cls, 
         raw: dict[str, Any]
       ) -> "CategorySpec":
-    return cls(
-      key=raw["key"],
-      label=raw.get("label", raw["key"]),
-      uri=raw.get("uri", ""),
-      preferred_filename=raw.get("preferred_filename"),
-      subcategories=list(raw.get("subcategories", [])),
-      metadata=dict(raw.get("metadata", {})),
-    )
+	return cls(
+	  key=raw["key"],
+	  label=raw.get("label", raw["key"]),
+	  uri=raw.get("uri", ""),
+	  preferred_filename=raw.get("preferred_filename"),
+	  subcategories=list(raw.get("subcategories", [])),
+	  metadata=dict(raw.get("metadata", {})),
+	)
   ##endof: from_dict(cls, raw)
 
 ##endof: class CategorySpec
