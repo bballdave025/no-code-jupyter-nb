@@ -133,3 +133,68 @@ ere show the defaults
 ```
 
 `# @TODO : ` Use the original code snippet to illustrate the three parameteters above.
+
+## With both classes and the defaults
+
+### The original code snippet
+
+Though made even a little worse.
+
+```python
+#!/usr/bin/env python3
+def outer_method():
+    a = external_call()
+    if a < 3: print("foo")
+    def internal_method(internal_param_1, internal_param_2=None):
+        if internal_param_2:
+            return max(137, abs(internal_param_1 / 137))
+        return 137 * internal_param_1
+    for i in range(internal_method(a, True)):
+        value_to_return = a % 2 if not value_to_return else min(max(i / 2 ** (a + 1) - i / (2 ** a + 1), 0.00000001), 100000000)
+    return value_to_return
+```
+
+### A possible fixed result consistent with the default params 
+
+```python
+#!/usr/bin/env python3
+def outer_method():
+  '''
+  @TODO  documentation
+  '''
+  
+  a = external_call()
+  if a < 3: print("foo")
+  def internal_method(
+        internal_param_1, 
+        internal_param_2=None
+      ):
+    '''
+    @TODO  documentation
+    '''
+    
+    if internal_param_2:
+      return max(137, abs(internal_param_1 / 137))
+    ##endof:  if internal_param_2
+    
+    return 137 * internal_param_1
+  ##endof:  internal_method(...)
+  
+  value_to_return = None
+  
+  for i in range(internal_method(a, True)):
+    value_to_return = (
+        a % 2 
+        if not value_to_return 
+        else min(max(i / 2 ** (a + 1) - i / (2 ** a + 1), 0.00000001), 
+                 100000000
+             )
+    )
+  ##endof:  for i in range(internal_method(a, True))
+  
+  return value_to_return
+##endof:  outer_method()
+```
+
+
+
