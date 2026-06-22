@@ -38,5 +38,5 @@ class CodeGenStyle:
 
   do_use_endof_markers: bool=True
   do_require_predeclaration: bool=True
-  docstring_choice: str = "three_singles"
-##endof:  class CodGenStyle
+  docstring_choice: str="three_singles"
+##endof:  class CodeGenStyle
