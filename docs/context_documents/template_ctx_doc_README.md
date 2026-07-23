@@ -1,7 +1,13 @@
 # Context Documents
 
-This directory contains **continuation-ready context documents**
-(Lab Notebook / LN files) for the **no-code-jupyter-nb** project.
+This directory contains **continuation-ready context documents** (Lab
+Notebook / LN files) for the **{{PROJECT_NAME}}** project.
+
+> **Repository customization**
+>
+> Replace `{{PROJECT_NAME}}`, `{{SHORT_PROJECT_MARKER}}`, and any other
+> `{{...}}` placeholders in this README with values appropriate for this
+> repository.
 
 These are **not** polished documentation. They are:
 
@@ -36,7 +42,7 @@ Think of these as **checkpoint files for thinking**, not summaries.
 
 # Documentation Hierarchy
 
-```text
+``` text
 README.md
     ↓
 Project Charter
@@ -55,7 +61,7 @@ Each layer answers a different question.
 Use **double-brace placeholders** (`{{...}}`) rather than angle
 brackets.
 
-````text
+``` text
 *BEGIN: Context Document Header*
 
 # CONTEXT DOCUMENT — Continuation
@@ -114,12 +120,16 @@ date +'%s_%Y-%m-%dT%H:%M:%S%z'
 - Reinterpret only when explicitly requested.
 
 *ENDOF: Context Document Header*
+```
+
+------------------------------------------------------------------------
 
 # Pre-Context-Document Prompt (PCDP)
 
-Before pasting a context document into a fresh chat, you may send a short PCDP to establish context and immediate goals.
+Before pasting a context document into a fresh chat, you may send a
+short PCDP to establish context and immediate goals.
 
-```markdown
+``` text
 ## Current Work
 
 Project:
@@ -139,6 +149,7 @@ The next message will be a CONTEXT DOCUMENT for:
 {{Full project name}}
 
 This continues discussion begun in:
+
 "{{Previous chat title}}"
 
 ---
@@ -176,14 +187,18 @@ Help me:
 {{Concrete, task-oriented, ADHD-friendly next task}}
 
 *End of PCDP*
-
 ```
 
-------------------------------------------------------------------------
-
 ## Practical Note
-                                                        In normal use, the **Instructions for Next Message** section is often **omitted** _for the chat creating the context document_.                                                                                                 Experience has shown that including it sometimes causes models to interpret the transferred context as operational instructions rather than as information to pass on. In most cases, the PCDP establishes the project, immediate focus, and previous chat. However, giving the directions to the _new_ chat (unlike giving it to the old) actually reduces confusion and extra explanations where Dave would prefer to continue cognitive momentum. After it's clear that the forthcoming Context Document is not a usual prompt, the Context Document can more easily supply the authoritative project state.
 
+In normal use, the **Instructions for Next Message** section is often
+**omitted**.
+
+Experience has shown that including it sometimes causes models to
+interpret the transferred context as operational instructions rather
+than project state. In most cases, the PCDP simply establishes the
+project, immediate focus, and previous chat, after which the Context
+Document supplies the authoritative state.
 
 Typical workflow:
 
@@ -209,33 +224,23 @@ Examples:
 
 ``` text
 LN_ncjn_2026-05-01_ctx01_-_config-class-architecture.md
-LN_ncjn_2026-05-18_ctx01_-_bootstrap_package_structure.md
-LN_ncjn_2026-05-26_ctx01_-_json_loader_and_ocr_handoff.md
 LN_ncjn_2026-06-30_parked_-_widget-refactor.md
 ```
 
-`LN` = Lab Notebook. This is the user's longstanding name for these files, including from undergrad and industry work.
-
-`ncjn` = `no-code-jupyter-nb`.
+`LN` = Lab Notebook.
 
 The project marker should remain short.
 
-The optional tag is usually omitted unless it adds useful context. Examples of useful optional tags:
-- ctx01
-- parked
-- submitted-addenda
-- pr-for-k-prisbrey
-
-When in doubt, omit the optional tag.
+The optional tag is usually omitted unless it adds useful context.
 
 ------------------------------------------------------------------------
 
 # Retrieval Tip
 
 1.  Sort by filename.
-2.  Open the newest `LN_ncjn*`.
+2.  Open the newest `LN_*`.
 3.  Resume from **Immediate Next Steps** (or equivalent).
-                                                        ------------------------------------------------------------------------
+
+------------------------------------------------------------------------
 
 *End of README*
-
